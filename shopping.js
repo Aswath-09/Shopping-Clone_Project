@@ -20,3 +20,19 @@ products.forEach(p=>{
   `;
   prodContainer.appendChild(card);
 });
+let end = new Date("Aug 9, 2025 23:59:59").getTime();
+let x = setInterval(() => {
+  let now = new Date().getTime();
+  let d = end - now;
+
+  if (d < 0) {
+    clearInterval(x);
+    document.getElementById("offer-timer").innerHTML = "Offer has ended!";
+  } else {
+    let days = Math.floor(d / (1000 * 60 * 60 * 24));
+    let hrs = Math.floor((d % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let min = Math.floor((d % (1000 * 60 * 60)) / (1000 * 60));
+    let sec = Math.floor((d % (1000 * 60)) / 1000);
+    document.getElementById("offer-timer").innerHTML = `Offer ends in: ${days}d ${hrs}h ${min}m ${sec}s`;
+  }
+}, 1000);
