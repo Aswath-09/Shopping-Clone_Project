@@ -6,6 +6,10 @@ const products = [
   { id:5, name:"iphone 15 pro max", price:139999, img:"iphone.jpg" },
   { id:6, name:"Muscleblaze gold whey protein", price:4399, img:"whey.jpg" },
   { id:7, name:"Akrapovic exhaust", price:2399, img:"exhaust.jpg" },
+  { id:8, name:"Play Station 5", price:50299, img:"ps5.jpg" },
+  { id:9, name:"Porsche wallposter", price:299, img:"porshe wp.jpg" },
+  { id:10, name:"Marshell Headset", price:21320, img:"Marshell HS.jpg" },      
+
 ];
 
 const prodContainer = document.getElementById("products");
@@ -16,7 +20,7 @@ products.forEach(p=>{
     <img src="${p.img}" alt="${p.name}" />
     <h4>${p.name}</h4>
     <p>₹${p.price}</p>
-    <button onclick="alert('Added ${p.name}!')">Add to Cart</button>
+    <button onclick="alert('Added ${p.name} to the cart')">Add to Cart</button>
   `;
   prodContainer.appendChild(card);
 });

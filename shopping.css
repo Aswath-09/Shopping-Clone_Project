@@ -1,8 +1,9 @@
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #f0f4f7, #dfe9f3); 
+  background: linear-gradient(135deg, #75c6d4, #dfe9f3); 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,14 +26,15 @@ h1 {
 .card {
   background: white;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgb(18, 186, 178);
   padding: 15px;
   width: 200px;
   transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.2);
+  cursor: pointer;
 }
 
 .card img {
@@ -44,44 +46,147 @@ h1 {
 
 .card h3 {
   margin: 10px 0 5px;
-  color: #f4e002e4;
+  color: #000000e4;
 }
 
 .card p {
   margin: 0;
   font-weight: bold;
-  color: #007bff;
+  color: #327ed0;
 }
-
+.text {
+  text-align: center;
+  font-size: 18px;
+  color: #000000e4;
+  margin-top: 20px;
+  margin-left: 600px;
+}
 button {
   margin-top: 10px;
-  background: #cc1010;
-  color: white;
+  background: #112a2b;
+  color: rgb(255, 255, 255);
   border: none;
-  padding: 8px 12px;
+  padding: 10px 12px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 5s;
+  transition: background 0s;
 }
 
 button:hover {
-  background: #e65c00;
+  background: #8e4242;
 }
 .userinp {
+  cursor: pointer;
+  margin-left: 530px;
   width: 300px;
   padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
 }
-.logo{
-  margin-left: 145px;
-  font-size: 20px;
-  color: #00af8c;
+.logo1{
+  align-items: center;
+  margin-left: 640px;
+  font-size: 25px;
+  color: #043c31;
   font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #offer-timer{
-  color: red;
+  color: rgb(0, 69, 80);
   font-weight: bold;
-  margin-left: 70px;
+  margin-left: 600px;
   font-size: 16px;
+}
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to top, #a0e3f0, #b5e0f2);
+}
+
+.navbar {
+  margin-right: 10px;
+  cursor: pointer;
+  width: 90%;
+  color:rgb(0, 38, 43);
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  box-sizing:content-box;
+  position:static;
+  top: 0;
+  left: 20px
+}
+.top-navbar {
+  width: 100%;
+  background-color: #131921;
+  color: white;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  margin-right: 100px;
+  width: 90px;
+}
+
+.location {
+  align-items:end;
+  font-size: 12px;
+}
+
+.search-bar{
+  flex: 1;
+  display: flex;
+  max-width: 400px;
+  
+}
+.category {
+  margin-left: 250px;
+  padding: 8px;
+  border: none;
+}
+
+.search-bar input {
+  padding: 1px;
+  border-radius: 0px;
+  flex: 1;
+  border: none;
+}
+.search-btn {
+  padding: 7px 10px;
+  border-radius: 0px;
+  margin-right: 500px;
+  margin: 0px 0px;
+  background-color: #f2a929;
+  border:#f2a929;
+  cursor: pointer;
+  gap: 0px;
+}
+
+.right-section {
+  display: flex;
+  font-size: 15px;
+  
+}
+.right-section div {
+  margin-right: 100px;
+  text-align: right;
+}
+.account{
+  margin: right 400px; ;
+}
+.cart{
+  margin-right: 100px;
 }
