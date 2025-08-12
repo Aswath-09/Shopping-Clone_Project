@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -24,9 +25,9 @@ h1 {
 }
 
 .card {
-  background: white;
+  background: rgb(255, 255, 255);
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgb(18, 186, 178);
+  box-shadow: 0 5px 15px rgb(184, 67, 67);
   padding: 15px;
   width: 200px;
   transition: transform 0.3s ease;
@@ -39,8 +40,8 @@ h1 {
 
 .card img {
   width: 100%;
-  height: 150px;
-  object-fit: cover;
+  height: 250px;
+  object-fit:scale-down;
   border-radius: 10px;
 }
 
@@ -83,19 +84,13 @@ button:hover {
   border-radius: 10px;
   border: 3px solid #ffffff;
 }
-.logo1{
-  align-items: center;
-  margin-left: 640px;
-  font-size: 25px;
-  color: #043c31;
-  font-weight: bold;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+
 #offer-timer{
   color: rgb(0, 69, 80);
   font-weight: bold;
-  margin-left: 600px;
-  font-size: 16px;
+  position: relative;
+  left: 620px;
+  font-size: 20px;
 }
 body {
   width: 100%;
@@ -106,21 +101,20 @@ body {
 }
 
 .navbar {
-  margin-right: 10px;
+  position: relative;
+  right: -30px;
   cursor: pointer;
-  width: 90%;
+  width: 100%;
   color:rgb(0, 38, 43);
-  padding: 10px 30px;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 35px;
   box-sizing:content-box;
-  position:static;
-  top: 0;
-  left: 20px
 }
 .top-navbar {
   width: 100%;
+  margin-left: 0px;
+  margin-right: 500px;
   background-color: #131921;
   color: white;
   display: flex;
@@ -137,42 +131,56 @@ body {
 }
 
 .logo {
-  margin-right: 100px;
+  position: relative;
+  left: -10px;
   width: 90px;
 }
 
 .location {
-  align-items:end;
+  position: absolute;
+  right: 1320px;
   font-size: 12px;
 }
-
-.search-bar{
-  flex: 1;
+.search1{
+  height: 25px;
+  position: relative;
+  right: 515px;
   display: flex;
-  max-width: 400px;
-  
+  align-items: center;
+  background-color:white;
+  padding: 10px;
+  border: black;
+  border-radius: 4px;
+  cursor: pointer;
 }
+
 .category {
-  margin-left: 250px;
+  margin-left: 300px;
   padding: 8px;
   border: none;
+  background: #131921;
+  color: white;
+  font-size: 1rem;
 }
-
+.search-bar{
+  height: 45px;
+  width: 50px;
+  position: relative;
+  right: 10px;
+  max-width: 500px;
+  flex: 1;
+  display: flex;
+}
 .search-bar input {
-  padding: 1px;
-  border-radius: 0px;
+  position: relative;
+  overflow: hidden;
+  right: -0px;
+  width:500px ;
+  outline: none;
+  padding: 1px 180px;
+  border-radius: 5px;
   flex: 1;
   border: none;
-}
-.search-btn {
-  padding: 7px 10px;
-  border-radius: 0px;
-  margin-right: 500px;
-  margin: 0px 0px;
-  background-color: #f2a929;
-  border:#f2a929;
-  cursor: pointer;
-  gap: 0px;
 }
 
 .right-section {
@@ -185,8 +193,54 @@ body {
   text-align: right;
 }
 .account{
-  margin: right 400px; ;
+  right: -680px;
+  position: relative;
 }
 .cart{
-  margin-right: 100px;
+  position: relative;
+  right: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.lang{
+  margin-bottom: -5px;
+  position: relative;
+  margin-top: -0px;
+  right: 100px;
+}
+.seller{
+  position: relative;
+  right: -190px;
+  color: #ffffffe4;
+  font-weight:normal;
+  font-size: 18px;
+}
+.seller-icon{
+  position: relative;
+  right: -0px;
+  margin-bottom: -8px;
+  height: 30px;
+  font-weight:normal;
+  font-size: 18px;
+}
+.orders{
+  position: relative;
+  right: 80px;
+
+}
+.login{
+  position: relative;
+  right: 60px;
+  color: #ffffffe4;
+  font-weight:normal;
+  font-size: 19px;
+}
+.login-icon{
+  position: relative;
+  right: 85px;
+  cursor: pointer;
+  margin-bottom: -8px;
+  height: 30px;
+  font-weight:normal;
+  font-size: 18px;
 }

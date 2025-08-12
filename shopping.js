@@ -9,7 +9,9 @@ const products = [
   { id:8, name:"Play Station 5", price:50299, img:"ps5.jpg" },
   { id:9, name:"Porsche wallposter", price:299, img:"porshe wp.jpg" },
   { id:10, name:"Marshell Headset", price:21320, img:"Marshell HS.jpg" },      
-
+  { id:11, name:"Boat Headset", price:5999, img:"Headset.jpg" },
+  { id:12, name:"Apple Macbook Pro", price:147990, img:"apple.jpg" },
+  
 ];
 
 const prodContainer = document.getElementById("products");
@@ -24,7 +26,7 @@ products.forEach(p=>{
   `;
   prodContainer.appendChild(card);
 });
-let end = new Date("Aug 9, 2025 23:59:59").getTime();
+let end = new Date("Aug 15, 2025 23:59:59").getTime();
 let x = setInterval(() => {
   let now = new Date().getTime();
   let d = end - now;
