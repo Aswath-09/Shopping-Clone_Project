@@ -137,6 +137,7 @@ body {
 }
 
 .location {
+  cursor: pointer;
   position: absolute;
   right: 1320px;
   font-size: 12px;
@@ -163,19 +164,21 @@ body {
   font-size: 1rem;
 }
 .search-bar{
+  display: flex;
   height: 45px;
   width: 50px;
   position: relative;
-  right: 10px;
+  right: -70px;
   max-width: 500px;
   flex: 1;
   display: flex;
 }
 .search-bar input {
+  display: flex;
   position: relative;
   overflow: hidden;
-  right: -0px;
-  width:500px ;
+  right: 22px;
+  width:500px ;                                               
   outline: none;
   padding: 1px 180px;
   border-radius: 5px;
@@ -197,18 +200,21 @@ body {
   position: relative;
 }
 .cart{
+  cursor: pointer;
   position: relative;
   right: 50px;
   font-size: 20px;
   font-weight: bold;
 }
 .lang{
+  cursor: pointer;
   margin-bottom: -5px;
   position: relative;
   margin-top: -0px;
   right: 100px;
 }
 .seller{
+  cursor: pointer;
   position: relative;
   right: -190px;
   color: #ffffffe4;
@@ -224,11 +230,13 @@ body {
   font-size: 18px;
 }
 .orders{
+  cursor: pointer;
   position: relative;
   right: 80px;
 
 }
 .login{
+  cursor: pointer;
   position: relative;
   right: 60px;
   color: #ffffffe4;
@@ -243,4 +251,11 @@ body {
   height: 30px;
   font-weight:normal;
   font-size: 18px;
+}
+@media screen{
+  .search-bar input{
+    width: 100%;
+    padding: 1px 50px;
+    }
+  
 }
