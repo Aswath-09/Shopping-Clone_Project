@@ -26,7 +26,7 @@ products.forEach(p=>{
   `;
   prodContainer.appendChild(card);
 });
-let end = new Date("Sep 15, 2025 23:59:59").getTime();
+let end = new Date("Feb 15, 2026 23:59:59").getTime();
 let x = setInterval(() => {
   let now = new Date().getTime();
   let d = end - now;
