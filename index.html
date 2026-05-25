@@ -2,98 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shopping Clone</title>
-  <link rel="stylesheet" href="./shopping.css" />
-  
+  <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
 
+  <!-- TOP NAVBAR -->
+  <header class="top-navbar">
 
-    
-  <header class="header">
-    <centre>
+    <div class="logo-section">
+      <img src="Screenshot 2025-08-06 002845 (1).png" class="logo"/>
+    </div>
 
-    <div class="top-navbar">
-  <div class="left-section">
-    <img src="./Screenshot 2025-08-06 002845 (1).png" alt="logo" class="logo" />
     <div class="location">
       <span>Deliver to Aswath</span>
-      <br>
-      <strong>📍Coimbatore</strong>
-    </div>
-  </div>
-    
-    <div class="account">
-      <span>Hello, Aswath</span><br>
-      <strong>Account & Lists</strong>
+      <strong>📍 Coimbatore</strong>
     </div>
 
-  <div class="search-bar">
-    <input type="text" placeholder="Search Shoppingclone.in">
-    <img src="./search1.png" alt="search1" class="search1" />
-  </div>
-  <div class="seller">
-    
-    <img src="./icons8-seller-100.png" alt="seller" class="seller-icon" />
-    <span>Become a Seller</span>
-  </div>
-  <div class="lang">
-        <select class="category">
-        <option>Language</option>
-        <option>English</option>
-        <option>French</option>
-        <option>Hindi</option>
-        <option>Tamil</option>
-      </select> 
-      </div>
-  <div class="login">
-    <span>Login</span>
-    <img src="./icons8-login-100.png" alt="login-icon" class="login-icon" />
+    <div class="search-bar">
+      <input type="text" placeholder="Search products..."/>
     </div>
-    <div class="orders">
-      <span>Returns</span><br>
-      <strong>& Orders</strong>
-    </div>
-    <div class="cart">
-      🛒<sup>2</sup> Cart
-    </div>
-  
-</div>
-      </centre>
-      <br>
-      <div class="navbar">
-  <span>☰ All</span>
-  <span>Fresh</span>
-  <span>Today's Deals</span>
-  <span>Customer Service</span>
-  <span>Bestsellers</span>
-  <span>Buy Again</span>
-  <span>MX Player</span>
-  <span>Sell</span>
-  <span>Gift Cards</span>
-  <span>Kindle eBooks</span>
-  <span>Clone Pay</span>
-  <span>Browsing History</span>
-  <span>xyz.shoppingclone.in</span>
-</div>
-       <p id="offer-timer" style="color:  rgb(0, 63, 67); font-weight: bold;"></p>
-    </div>
-    <div class="header-right">
-      
-    </div>
+
+    <div class="account">Account</div>
+    <div class="cart">🛒 Cart</div>
+
   </header>
 
-  <section class="banner">
-    <h2>Shopping Clone's Big Billion Days Sale!</h2>
-   
-  </section>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <span>All</span>
+    <span>Deals</span>
+    <span>Customer Service</span>
+    <span>Bestsellers</span>
+    <span>Sell</span>
+  </nav>
 
-  <section class="products" id="products"></section>
+  <!-- TIMER -->
+  <p id="offer-timer"></p>
 
-  <script src="./shopping.js"></script>
- 
- 
-  </body>
+  <!-- PRODUCTS -->
+  <section id="products"></section>
+
+  <script src="script.js"></script>
 </body>
 </html>
