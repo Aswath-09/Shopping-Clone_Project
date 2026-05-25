@@ -1,104 +1,261 @@
-* {
+body { 
+  overflow-x: hidden;
+  width: 100%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arial;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #75c6d4, #dfe9f3); 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* BODY */
-body {
-  background: linear-gradient(135deg, #75c6d4, #dfe9f3);
+h1 {
+  margin: 20px 0;
+  color: #e6d709;
 }
 
-/* TOP NAVBAR */
-.top-navbar {
+#products {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background: #131921;
-  color: white;
-  padding: 10px;
-  gap: 10px;
-}
-
-.logo {
-  width: 80px;
-}
-
-/* SEARCH */
-.search-bar {
-  flex: 1;
-}
-
-.search-bar input {
-  width: 100%;
-  padding: 8px;
-  border-radius: 5px;
-  border: none;
-}
-
-/* NAVBAR */
-.navbar {
-  display: flex;
-  gap: 20px;
-  padding: 10px;
-  background: white;
-  overflow-x: auto;
-}
-
-/* TIMER */
-#offer-timer {
-  text-align: center;
-  font-weight: bold;
-  margin: 10px;
-}
-
-/* PRODUCTS GRID */
-#products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
+  justify-content: center;
+  gap: 30px;
   padding: 20px;
 }
 
-/* CARD */
 .card {
-  background: white;
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-  transition: 0.3s;
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgb(184, 67, 67);
+  padding: 15px;
+  width: 200px;
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px) scale(1.2);
+  cursor: pointer;
 }
 
 .card img {
   width: 100%;
-  height: 180px;
-  object-fit: contain;
+  height: 250px;
+  object-fit:scale-down;
+  border-radius: 10px;
 }
 
+.card h3 {
+  margin: 10px 0 5px;
+  color: #000000e4;
+}
+
+.card p {
+  margin: 0;
+  font-weight: bold;
+  color: #327ed0;
+}
+.text {
+  text-align: center;
+  font-size: 18px;
+  color: #000000e4;
+  margin-top: 20px;
+  margin-left: 600px;
+}
 button {
   margin-top: 10px;
-  padding: 8px;
+  background: #112a2b;
+  color: rgb(255, 255, 255);
   border: none;
-  background: black;
-  color: white;
-  cursor: pointer;
+  padding: 10px 12px;
   border-radius: 5px;
+  cursor: pointer;
+  transition: background 0s;
 }
 
 button:hover {
-  background: red;
+  background: #8e4242;
+}
+.userinp {
+  cursor: pointer;
+  margin-left: 530px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .top-navbar {
-    flex-direction: column;
-    text-align: center;
-  }
+#offer-timer{
+  color: rgb(0, 69, 80);
+  font-weight: bold;
+  position: relative;
+  left: 620px;
+  font-size: 20px;
 }
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to top, #a0e3f0, #b5e0f2);
+}
+
+.navbar {
+  position: relative;
+  right: -30px;
+  cursor: pointer;
+  width: 100%;
+  color:rgb(0, 38, 43);
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  box-sizing:content-box;
+}
+.top-navbar {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 500px;
+  background-color: #131921;
+  color: white;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  position: relative;
+  left: -10px;
+  width: 90px;
+}
+
+.location {
+  cursor: pointer;
+  position: absolute;
+  right: 1320px;
+  font-size: 12px;
+}
+.search1{
+  height: 25px;
+  position: relative;
+  right: 515px;
+  display: flex;
+  align-items: center;
+  background-color:white;
+  padding: 10px;
+  border: black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.category {
+  margin-left: 300px;
+  padding: 8px;
+  border: none;
+  background: #131921;
+  color: white;
+  font-size: 1rem;
+}
+.search-bar{
+  display: flex;
+  height: 45px;
+  width: 50px;
+  position: relative;
+  right: -70px;
+  max-width: 500px;
+  flex: 1;
+  display: flex;
+}
+.search-bar input {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  right: 22px;
+  width:500px ;                                               
+  outline: none;
+  padding: 1px 180px;
+  border-radius: 5px;
+  flex: 1;
+  border: none;
+}
+
+.right-section {
+  display: flex;
+  font-size: 15px;
+  
+}
+.right-section div {
+  margin-right: 100px;
+  text-align: right;
+}
+.account{
+  right: -680px;
+  position: relative;
+}
+.cart{
+  cursor: pointer;
+  position: relative;
+  right: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.lang{
+  cursor: pointer;
+  margin-bottom: -5px;
+  position: relative;
+  margin-top: -0px;
+  right: 100px;
+}
+.seller{
+  cursor: pointer;
+  position: relative;
+  right: -190px;
+  color: #ffffffe4;
+  font-weight:normal;
+  font-size: 18px;
+}
+.seller-icon{
+  position: relative;
+  right: -0px;
+  margin-bottom: -8px;
+  height: 30px;
+  font-weight:normal;
+  font-size: 18px;
+}
+.orders{
+  cursor: pointer;
+  position: relative;
+  right: 80px;
+
+}
+.login{
+  cursor: pointer;
+  position: relative;
+  right: 60px;
+  color: #ffffffe4;
+  font-weight:normal;
+  font-size: 19px;
+}
+.login-icon{
+  position: relative;
+  right: 85px;
+  cursor: pointer;
+  margin-bottom: -8px;
+  height: 30px;
+  font-weight:normal;
+  font-size: 18px;
+}
+@media screen{
+  .search-bar input{
+    width: 100%;
+    padding: 1px 50px;
+    }
+  
+} 
