@@ -1,4 +1,4 @@
-const products = [
+ const products = [
   { id:1, name:"T-Shirt", price:299, img: "coolie.jpg"},
   { id:2, name:"Shoes", price:999, img:"shoe.jpg" },
   { id:3, name:"Jeans", price:799, img:"jeans.jpg" },
@@ -26,7 +26,7 @@ products.forEach(p=>{
   `;
   prodContainer.appendChild(card);
 });
-let end = new Date("Dec 15, 2026 23:59:59").getTime();
+let end = new Date("Feb 15, 2026 23:59:59").getTime();
 let x = setInterval(() => {
   let now = new Date().getTime();
   let d = end - now;
