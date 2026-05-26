@@ -39,6 +39,6 @@ let x = setInterval(() => {
     let hrs = Math.floor((d % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let min = Math.floor((d % (1000 * 60 * 60)) / (1000 * 60));
     let sec = Math.floor((d % (1000 * 60)) / 1000);
-    document.getElementById("offer-timer").innerHTML = Offer ends in: ${days}d ${hrs}h ${min}m ${sec}s;
+    document.getElementById("offer-timer").innerHTML = `Offer ends in: ${days}d ${hrs}h ${min}m ${sec}s`;
   }
 }, 1000);
